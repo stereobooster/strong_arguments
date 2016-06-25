@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["stereobooster"]
   spec.email         = ["stereobooster@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
+  spec.summary       = "Like strong_parameters, but for method arguments"
+  spec.description   = "Like strong_parameters, but for method arguments"
   spec.homepage      = "https://github.com/stereobooster/strong_arguments"
   spec.license       = "MIT"
 

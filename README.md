@@ -1,5 +1,10 @@
-# StrongArguments
+# strong_arguments
 
+**Work in progress.**
+
+## Intorduction
+
+strong_arguments - like [strong_parameters](https://github.com/rails/strong_parameters) but for method arguments. [Read blogpost for more info](http://stereobooster.github.io/story-behind-strong-arguments).
 
 ## Installation
 
@@ -15,7 +20,20 @@ And then execute:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+require 'strong_arguments'
+
+def where(options = {})
+  arguments = StrongArguments.new(options)
+    .optional(:name, :age)
+
+  if argument.name_present?
+    argument.name
+  elsif argument.age_present?
+    argument.age
+  end
+end
+```
 
 ## Development
 
